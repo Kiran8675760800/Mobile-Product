@@ -1,0 +1,25 @@
+I am useing this all step to creat given Assignment
+      
+step 1
+  Node --v check
+step 2
+  ng new mproduct --no-standalone
+step 3
+  npm install --save @angular/material@latest
+step 4
+  npm install --save @angular/animations@latest
+step 5
+  npm install @angular/common@latest
+step 6
+      firefox error showing in crome or web just run this cmd in project
+         ( Set-ExecutionPolicy RemoteSigned -Scope CurrentUser )
+
+import Model Code
+
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatMenuModule} from '@angular/material/menu';
+
+
