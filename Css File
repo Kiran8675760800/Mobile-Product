@@ -1,0 +1,412 @@
+.mdivstyle {
+    width: 30%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-left: 33%;
+    position: fixed;
+    overflow: scroll;
+  }
+  
+  .example-header-image {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/14/17/39/person-1824144_640.png');
+    background-size: cover;
+  }
+  
+  .roundcolour {
+    border-radius: 31px;
+    background: white;
+    width: 56px;
+    height: 56px;
+    border-color: 1px 1px 10px 0px gray
+  }
+  
+  .roundcolour23 {
+    border-radius: 31px;
+    background: white;
+    width: 50px;
+    height: 47px;
+    border-color: 1px 1px 10px 0px gray
+  }
+  
+  .roundcolour1 {
+    border-radius: 31px;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-color: 1px 1px 10px 0px gray
+  }
+  
+  .roundcolour2 {
+    border-radius: 31px;
+    background: white;
+    width: 50px;
+    height: 50px;
+  
+  }
+  
+  
+  .sizechart {
+    border-radius: 31px;
+    background: white;
+    width: 56px;
+    height: 56px;
+    border-color: 1px 1px 10px 0px gray
+  }
+  
+  /* Container for the ratings */
+  .rating-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Left-side average rating */
+  .average-rating {
+    text-align: center;
+  }
+  
+  .average-rating h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .average-rating span {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  /* Right-side breakdown */
+  .rating-breakdown {
+    width: 100%;
+  }
+  
+  .rating-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .rating-row .star {
+    color: #f55665;
+    /* Star color */
+  }
+  
+  .rating-row .progress-bar {
+    position: relative;
+    flex-grow: 1;
+    height: 8px;
+    background-color: #e0e0e0;
+    /* Background bar color */
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .rating-row .progress-bar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: currentColor;
+    /* Dynamic color */
+    width: 0%;
+    transition: width 0.3s ease;
+  }
+  
+  .rating-row[data-rating="5"] .progress-bar::before {
+    width: 80%;
+    color: #4caf50;
+    /* Green */
+  }
+  
+  .rating-row[data-rating="4"] .progress-bar::before {
+    width: 60%;
+    color: #66bb6a;
+    /* Light Green */
+  }
+  
+  .rating-row[data-rating="3"] .progress-bar::before {
+    width: 50%;
+    color: #ffeb3b;
+    /* Yellow */
+  }
+  
+  .rating-row[data-rating="2"] .progress-bar::before {
+    width: 20%;
+    color: #ff9800;
+    /* Orange */
+  }
+  
+  .rating-row[data-rating="1"] .progress-bar::before {
+    width: 10%;
+    color: #f44336;
+    /* Red */
+  }
+  
+  .rating-row .count {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .productdivcss {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  
+  .backnuttoncss {
+    color: #000;
+    font-size: 14px;
+    margin-left: -46px !important;
+    margin-top: 13px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+  }
+  
+  .productshowcss {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 11px;
+  }
+  
+  .detailsdiv {
+    width: 25%;
+    ;
+    margin-top: 20px;
+  }
+  
+  .Brandscss {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    margin-left: 3px;
+  }
+  
+  .ratingcard {
+    margin-left: 4px;
+    margin-top: 13px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+  }
+  
+  .rattibgvalue1 {
+    font-size: 20px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    font-weight: 800;
+  }
+  
+  .rattibgvalue2 {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-left: -3px !important;
+  }
+  
+  .rattibgvalue3 {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    margin-left: 1px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  
+  .rattibgvalue4 {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    margin-left: 3px;
+  }
+  
+  .Deliverycss {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+  }
+  
+  .OtherPlatformcss1 {
+    display: flex;
+    margin-left: -6px !important;
+    margin-top: 6px;
+  }
+  
+  .OtherPlatformcss2 {
+    color: palevioletred;
+    margin-left: 5px;
+  }
+  
+  .OtherPlatformcss3 {
+    margin-left: 12px;
+    cursor: pointer;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .OtherPlatformcss4 {
+    margin-left: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .Offercss {
+    color: palevioletred;
+    ;
+    margin-left: 5px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+  }
+  
+  .Offercss1 {
+    margin-left: 15px;
+    cursor: pointer;
+    cursor: pointer;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000
+  }
+  
+  .detailsdiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+  
+  .detailsdiv1 {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    ;
+    color: #454545;
+    margin-left: 14px;
+    font-size: 15px;
+  }
+  
+  .detailsdiv2 {
+    text-decoration: line-through;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-size: 18px;
+  }
+  
+  .detailsdiv3 {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .detailsdiv4 {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    ;
+    font-weight: bold;
+    font-size: 21px;
+  }
+  
+  .detailsdiv5 {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    ;
+    margin-top: 6px;
+    margin-left: 14px;
+  }
+  
+  .detailsdiv6 {
+    color: #454545;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    ;
+    margin-left: 14px;
+  }
+  
+  .detailsdiv7 {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    ;
+    color: rgb(0, 113, 206);
+    font-size: 20px;
+    margin-left: 14px;
+    margin-top: 5px;
+  }
+  
+  .Colourdivcss {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    ;
+    font-size: 20px;
+    margin-left: 14px;
+    font-size: 19px;
+  }
+  
+  .shoesizedivcss {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    ;
+    margin-left: 14px;
+    font-size: 19px;
+  }
+  
+  .shoesizecard1 {
+    margin-left: 21px;
+    margin-top: 11px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    ;
+    font-weight: bolder;
+  }
+  
+  .shoesizecard2 {
+    margin-left: 21px;
+    margin-top: 11px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    ;
+    font-weight: bolder;
+  }
+  
+  .shoesizecard3 {
+    margin-left: 21px;
+    margin-top: 11px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    ;
+    font-weight: bolder;
+  }
+  
+  .shoesizecard4 {
+    margin-left: 17px;
+    margin-top: 11px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    ;
+    font-weight: bolder;
+  
+  }
+  
+  .shoesizecard5 {
+    margin-left: 19px;
+    margin-top: 11px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    ;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .shoesizecard6 {
+    margin-left: 16px;
+    margin-top: 11px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    font-weight: bolder;
+  }
+  
+  .shoesizecard6 {
+    margin-left: 16px;
+    margin-top: 11px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #000;
+    font-weight: bolder;
+  }
+  .shoesizecard7 {
+    margin-left: 16px;
+    margin-top: 11px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+     color: #000;
+     ;font-weight: bolder;
+  }
