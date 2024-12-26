@@ -1,0 +1,34 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  standalone: false,
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'MP';
+  lessthan = "<"
+  offerdiv:boolean = false;
+  offerplatform:boolean = false;
+
+constructor(){}
+
+ngOnInit(){}
+
+offerclick(){
+  this.offerdiv = true;
+}
+
+closebuttonclick(){
+  this.offerdiv = false;
+}
+
+offerplatformclick(){
+this.offerplatform = true;
+setTimeout(() => {
+this.offerplatform = false;
+}, 1000);
+}
+
+}
