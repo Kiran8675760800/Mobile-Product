@@ -1,0 +1,17 @@
+step 1
+node -v -- v22.12.0
+
+step 2
+ng new mobileproduct --no-standalone
+
+step 3
+npm install - save @angular/material
+
+step 4
+npm install --save @angular/animations
+
+step 5
+npm install @angular/common
+
+step 6 -- Any error in load the page
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
